@@ -4,9 +4,8 @@ namespace ScalesAndModes
 {
     class Program
     {
-        
-
-        static void Calc(string[] array, string[] array2)
+    
+    static void Calc(string[] array, string[] array2)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -25,22 +24,12 @@ namespace ScalesAndModes
             }
 
             Console.WriteLine("{0} {1}", j, array2[j]);
-
         }
-
-
-
-
-
-
-
+        
         static void Main(string[] args)
         {
 
-
-
-
-            string[] scaleChoiceArray = new string[]
+                string[] scaleChoiceArray = new string[]
                                    {"All" ,                     //0
                                    "(I) Ionian (major)",        //1
                                    "(II) Dorian",               //2
@@ -87,8 +76,6 @@ namespace ScalesAndModes
             cbArray[10] = "Cb Blues: Cb Ebb Fb Gbb Gb Bbb Cb";
             cbArray[11] = "Cb major pentatonic: Cb Db Eb Gb Ab Cb";
             cbArray[12] = "Cb minor pentatonic: Cb Ebb Fb Gb Bbb Cb";
-
-
 
             //C#
             string[] csArray = new string[13];
@@ -394,21 +381,9 @@ namespace ScalesAndModes
             bsArray[11] = "B# major pentatonic: B# Cx Dx Fx Gx B#";
             bsArray[12] = "B# minor pentatonic: B# D# E# Fx A# B#";
 
-
-
-
-
-
-
-
-
-
-
+            
             while (true)
             {
-
-
-
                 Console.WriteLine(" choose a note:" + "\n" + "\n" +
                    "Cb    C    C#" + "\n" +
                    "Db    D    D#" + "\n" +
@@ -446,19 +421,11 @@ namespace ScalesAndModes
                     case "Bb": case "bb": Calc(scaleChoiceArray, bbArray); break;
                     case "B#": case "b#": Calc(scaleChoiceArray, bsArray); break;
 
-
                 }
 
                 Console.WriteLine("\n" + "press any key to restart");
                 Console.ReadKey();
             }
-
-
-
-
-
-
-
         }
     }
 }
